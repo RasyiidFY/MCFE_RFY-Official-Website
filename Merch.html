@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.8">
+        <title>RFY Official Website</title>
+        <link rel="stylesheet" href="./CSS/Style.css">
+        <link rel="icon" href="./Images/favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+    <header>
+        <div class="header-container">
+            <script src="./JS/Header Container.js" defer></script> <!-- Memastikan script dijalankan setelah DOM selesai dimuat -->
+            <div class="logo">
+                <img class="logo" src="./Images/Logo.png" alt="Logo" id="logo"> <!-- Ganti dengan path logo kamu -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Profile.html">Profile</a></li>
+                    <li><a href="./News.html">News</a></li>
+                    <li><a href="./Schedule.html">Schedule</a></li>
+                    <li><a href="./Discography.html">Discography</a></li>
+                    <li><a href="./Merch.html">Merch</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="contact-button">Contact</a>
+        </div>
+        <div class="header-title">
+            <h2>Hello <span class="im">I'm</span></h2>
+            <h1>Rasyiid Fadhilah Yusuf</h1>
+            <h3>Soloist | EDM Producer | Creative Engineer</h3>
+        </div>
+        <img src="./Images/Background Header.jpg" alt="Foto Artis" class="header-bg">
+    </header>
+    <script>
+        window.addEventListener('load', function() {
+          history.pushState(null, null, window.location.href); // Tambahkan dummy history
+        });
+      
+        window.addEventListener('popstate', function(event) {
+          window.location.href = 'https://www.google.com'; // Redirect ke Google kalau back ditekan
+        });
+    </script>
+</html>

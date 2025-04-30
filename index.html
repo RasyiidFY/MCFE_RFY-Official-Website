@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.8">
+        <title>RFY Official Website</title>
+        <link rel="stylesheet" href="./CSS/Style.css">
+        <link rel="icon" href="./Images/favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <script src="./JS/Script.js" defer></script>
+    </head>
+
+    <header>
+        <div class="header-container">
+            <script src="./JS/Header Container.js" defer></script> <!-- Memastikan script dijalankan setelah DOM selesai dimuat -->
+            <div class="logo">
+                <img class="logo" src="./Images/Logo.png" alt="Logo" id="logo"> <!-- Ganti dengan path logo kamu -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Profile.html">Profile</a></li>
+                    <li><a href="./News.html">News</a></li>
+                    <li><a href="./Schedule.html">Schedule</a></li>
+                    <li><a href="./Discography.html">Discography</a></li>
+                    <li><a href="./Merch.html">Merch</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="contact-button">Contact</a>
+        </div>
+        <div class="header-title">
+            <h2>Hello <span class="im">I'm</span></h2>
+            <h1>Rasyiid Fadhilah Yusuf</h1>
+            <h3>Soloist | EDM Producer | Creative Engineer</h3>
+        </div>
+        <img src="./Images/Background Header.jpg" alt="Foto Artis" class="header-bg">
+    </header>
+      
+    <body>
+        <div id="scroll-indicator"></div>
+        <section class="quick-access">
+            <h2>Official Music Video</h2>
+            <div class="video-playlist">
+                <iframe src="https://www.youtube.com/embed/HaEfrGRVg-s?si=USX-xJeRSpQqsm6S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                <iframe src="https://www.youtube.com/embed/gKvRNhfTBUE?si=DWHgc2vtCiq229Cb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>           
+            </div>
+        </section>
+
+        <section id="whats-new" class="whats-new-section">
+            <div class="whats-new-container">
+                <div class="whats-new-header">
+                    <h2>What's New</h2>
+                </div>
+                <div class="whats-new-content">
+                    <div class="whats-new-item">
+                        <img src="./Images/Merch T-Shirt.jpg" alt="Update 1">
+                        <div class="whats-new-text">
+                            <h3>Official Merchandise</h3>
+                            <p>Coming soon official merchandise of RFY</p>
+                            <a href="./Merch.html" class="more-info">More Info</a>
+                        </div>
+                    </div>
+                    <div class="whats-new-item">
+                        <img src="./Images/New Single.JPG" alt="Update 2">
+                        <div class="whats-new-text">
+                            <h3>Music Release</h3>
+                            <p>Stay tuned, listen and enjoy my music on streaming platforms.</p>
+                            <a href="./Discography.html" class="more-info">More Info</a>
+                        </div>
+                    </div>
+                    <div class="whats-new-item">
+                        <img src="./Images/Konser.jpg" alt="Update 2">
+                        <div class="whats-new-text">
+                            <h3>Show Schedule</h3>
+                            <p>Details about concert, event, or other performance. Stay tuned!</p>
+                            <a href="./Schedule.html" class="more-info">More Info</a>
+                        </div>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section"> 
+            <div class="about-container">
+                <!-- Palet kiri -->
+                <div class="color-palette-side hidden" id="left-pallete">
+                    <div class="color-box color1"></div>
+                    <div class="color-box color2"></div>
+                    <div class="color-box color3"></div>
+                </div>
+                <div class="about-image">
+                    <img src="./Images/Rasyiid Profile Picture.jpg" alt="About Me Photo">
+                </div>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>
+                        Rasyiid Fadhilah Yusuf is a soloist and EDM producer from Mojokerto who combines the entertainment industry with technology and media integration to create maximum results. Presenting new energy in every work and stage.
+                    </p>
+                    <a href="./Profile.html" class="more-button">More</a>
+                </div>
+                <!-- Palet kanan -->
+                <div class="color-palette-side hidden" id="right-pallete">
+                    <div class="color-box color1"></div>
+                    <div class="color-box color2"></div>
+                    <div class="color-box color3"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./JS/Animation About.js"></script>
+
+        <section class="listen-now-section">
+            <div class="listen-text hidden-right">
+                <h2>Listen Now</h2>
+            </div>
+            
+            <div class="spotify-embed hidden-right">
+                <!-- Ganti dengan Embed Spotify Artist kamu -->
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/1WWhVS0lB7Gr22ALq25iAM?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="streaming-icons hidden-right">
+                <a href="https://music.youtube.com/channel/UCqP5F70HI3bawtT2_AjeiuQ?si=CQEnuX406e3YjIbC" target="_blank">
+                    <img src="./Images/Icon/Youtube Music.png" alt="YouTube Music">
+                </a>
+                <a href="https://music.apple.com/us/artist/rasyiid-fadhilah-yusuf/1653609274" target="_blank">
+                    <img src="./Images/Icon/Apple Music.png" alt="Apple Music">
+                </a>
+                <a href="https://music.amazon.com/artists/B0BDTRH3N5/rasyiid-fadhilah-yusuf" target="_blank">
+                    <img src="./Images/Icon/Amazon Music.png" alt="Amazon Music">
+                </a>
+                <a href="https://soundcloud.com/rasyiid-fadhilah-yusuf" target="_blank">
+                    <img src="./Images/Icon/Soundcloud.png" alt="Soundcloud">
+                </a>
+                <a href="https://deezer.page.link/3XBX1Q6NvbXSXrGP7" target="_blank">
+                    <img src="./Images/Icon/Deezer.png" alt="Deezer">
+                </a>
+                <a href="https://www.boomplay.com/artists/54581418?srModel=COPYLINK&srList=WEB" target="_blank">
+                    <img src="./Images/Icon/Boomplay.png" alt="Boomplay">
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Kategori: Sosial Media Publik -->
+                <div class="footer-social">
+                    <h4>Subcribe & Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://youtube.com/@rasyiid_fadhilah_yusuf" target="_blank"><img src="./Images/Icon/Youtube.jpg" alt="YouTube"></a>
+                        <a href="https://instagram.com/rasyiid_fadhilah_yusuf" target="_blank"><img src="./Images/Icon/Instagram.jpg" alt="Instagram"></a>
+                        <a href="https://tiktok.com/@rasyiid_fadhilah_yusuf" target="_blank"><img src="./Images/Icon/Tiktok.jpg" alt="Tiktok"></a>
+                        <a href="https://x.com/RFY_wav" target="_blank"><img src="./Images/Icon/Twitter.jpg" alt="Twitter"></a>
+                        <a href="https://threads.com/@rasyiid_fadhilah_yusuf" target="_blank"><img src="./Images/Icon/Threads.jpg" alt="Threads"></a>
+                    </div>
+                </div>
+                <!-- Kategori: Profesional & Komunitas -->
+                <div class="footer-community">
+                    <h4>Join & Support Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rasyiid-fadhilah-yusuf/" target="_blank"><img src="./Images/Icon/LinkedIn.jpg" alt="LinkedIn"></a>
+                        <a href="https://discord.gg/KnSgwf5fCC." target="_blank"><img src="./Images/Icon/Discord.jpg" alt="Discord"></a>
+                        <a href="https://saweria.co/RasyiidFY" target="_blank"><img src="./Images/Icon/Saweria.jpg" alt="Saweria"></a>
+                    </div>
+                </div>
+                <!-- Tombol Email Agensi -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <button class="email-button" onclick="copyEmail()">Copy Our Email</button>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>© 2025 MCF Entertainment. All rights reserved.</p>
+            </div>
+        </footer>          
+          
+    </body>
+</html>
